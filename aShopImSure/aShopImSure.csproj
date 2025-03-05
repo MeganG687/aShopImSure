@@ -65,6 +65,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -81,6 +82,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\foodIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bell.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

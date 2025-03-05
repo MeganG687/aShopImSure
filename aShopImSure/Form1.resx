@@ -121,7 +121,7 @@
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAX8AAAF+CAYAAABqGBrCAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vgAADr4B6kKxwAAAP+BJREFUeF7tnDHS7DqvXW/u2LlH4AE8py9y7tQz8PzD58NzC1XsVUuiRFEU1Y1g
+        vQAADr0BR/uQrQAAP+BJREFUeF7tnDHS7DqvXW/u2LlH4AE8py9y7tQz8PzD58NzC1XsVUuiRFEU1Y1g
         JS3sDWygfgb/V+f+89/++//4r8L/+b//b2lizt55qf+f//G/XsXoPNTTfzWuzku97WRlRuehnv6rcXVe
         6m0nKzM6zz///PNf+fi/hNF5qKf/alydl3rbycqMzkM9/Vfj6rzU205WZnSefPxfQCtHYNo9qGef1bg6
         L/W2kxVp5QhMuwf17LMaV+el3nayIq0cgWn3yMf/BbRyBKbdg3r2WY2r81JvO1mRVo7AtHtQzz6rcXVe
@@ -3162,5 +3162,12 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAewAAAIIAAAAeAAAAtR//AABP
         /wAAQP8AAMD/AADA/wAAwD8AAMAfAADADwAA+AcAAPgLAAD4AQAA/gEAAP8AAAD/gAAA/8AAAP/wAAA=
 </value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="bell" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\bell.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="printer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\printer.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

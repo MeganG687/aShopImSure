@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
+using System.Media;
 
 
 namespace aShopImSure
@@ -50,6 +51,10 @@ namespace aShopImSure
             totalOutput.Text = " ";
             try
             {
+                SoundPlayer bellplayer = new SoundPlayer(Properties.Resources.bell);
+
+                bellplayer.Play();
+
                 gooNum = Convert.ToDouble(gooInput.Text);
                 eggsNum = Convert.ToDouble(eggsInput.Text);
                 meatNum = Convert.ToDouble(meatInput.Text);
@@ -82,9 +87,12 @@ namespace aShopImSure
         {
             try
             {
+                SoundPlayer bellplayer = new SoundPlayer(Properties.Resources.bell);
+
+                bellplayer.Play();
+
                 tendered = Convert.ToDouble(tenderedInput.Text);                
                 
-
                 change = (tendered - totalAmount);
 
                 changeOutput.Text = $"{change.ToString("C")}";
@@ -102,67 +110,72 @@ namespace aShopImSure
         private void reciptButton_Click(object sender, EventArgs e)
         {
             try
-            {                
+            {
+                SoundPlayer printsound = new SoundPlayer(Properties.Resources.printer);
+
+                printsound.Play();
+
                 reciptLabel.ForeColor = Color.Black;
 
                 reciptLabel.Text = $"\n         This Is Totally a Shop";
 
-                Refresh();
+                reciptLabel.Refresh();
                 Thread.Sleep(500);
 
                 reciptLabel.Text += $"\n\n Order # Something";
 
-                Refresh();
+                reciptLabel.Refresh();
                 Thread.Sleep(500);
 
                 reciptLabel.Text += $"\n This is A Date";
 
-                Refresh();
+                reciptLabel.Refresh();
                 Thread.Sleep(500);
 
                 reciptLabel.Text += $"\n\n Meat x{meatNum}... {meatTotal.ToString("C")}";
 
-                Refresh();
+                reciptLabel.Refresh();
                 Thread.Sleep(500);
 
                 reciptLabel.Text += $"\n Eggs x{eggsNum}... {eggsTotal.ToString("C")}";
 
-                Refresh();
+                reciptLabel.Refresh();
                 Thread.Sleep(500);
 
                 reciptLabel.Text += $"\n Goo x{gooNum}... {gooTotal.ToString("C")}";
 
-                Refresh();
+                reciptLabel.Refresh();
                 Thread.Sleep(500);
 
                 reciptLabel.Text += $"\n\n SubTotal... {subtotal.ToString("C")}";
 
-                Refresh();
+                reciptLabel.Refresh();
                 Thread.Sleep(500);
 
                 reciptLabel.Text += $"\n Tax... {taxAmount.ToString("C")}";
 
-                Refresh();
+                reciptLabel.Refresh();
                 Thread.Sleep(500);
 
                 reciptLabel.Text += $"\n Total... {totalAmount.ToString("C")}";
 
-                Refresh();
+                reciptLabel.Refresh();
                 Thread.Sleep(500);
 
                 reciptLabel.Text += $"\n\n Tendered... {tendered.ToString("C")}";
 
-                Refresh();
+                reciptLabel.Refresh();
                 Thread.Sleep(500);
 
                 reciptLabel.Text += $"\n Change... {change.ToString("C")}";
 
-                Refresh();
+                reciptLabel.Refresh();
                 Thread.Sleep(500);
 
                 reciptLabel.Text += $"\n\n      Thank You For Your Money";
 
                 newOrderButton.Enabled = true;
+
             }
             catch 
             {
@@ -172,6 +185,10 @@ namespace aShopImSure
 
         private void newOrderButton_Click(object sender, EventArgs e)
         {
+            SoundPlayer bellplayer = new SoundPlayer(Properties.Resources.bell);
+
+            bellplayer.Play();
+
             reciptLabel.Text = " ";
             subTotalOutput.Text = " ";
             totalOutput.Text = " ";
