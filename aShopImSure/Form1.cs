@@ -117,7 +117,7 @@ namespace aShopImSure
 
                 reciptLabel.ForeColor = Color.Black;
 
-                reciptLabel.Text = $"\n         This Is Totally a Shop";
+                reciptLabel.Text = $"\n  This Is Totally a Shop";
 
                 reciptLabel.Refresh();
                 Thread.Sleep(500);
@@ -132,47 +132,47 @@ namespace aShopImSure
                 reciptLabel.Refresh();
                 Thread.Sleep(500);
 
-                reciptLabel.Text += $"\n\n Meat x{meatNum}... {meatTotal.ToString("C")}";
+                reciptLabel.Text += $"\n\n Meat x{meatNum}...     {meatTotal.ToString("C")}";
 
                 reciptLabel.Refresh();
                 Thread.Sleep(500);
 
-                reciptLabel.Text += $"\n Eggs x{eggsNum}... {eggsTotal.ToString("C")}";
+                reciptLabel.Text += $"\n Eggs x{eggsNum}...     {eggsTotal.ToString("C")}";
 
                 reciptLabel.Refresh();
                 Thread.Sleep(500);
 
-                reciptLabel.Text += $"\n Goo x{gooNum}... {gooTotal.ToString("C")}";
+                reciptLabel.Text += $"\n Goo  x{gooNum}...     {gooTotal.ToString("C")}";
 
                 reciptLabel.Refresh();
                 Thread.Sleep(500);
 
-                reciptLabel.Text += $"\n\n SubTotal... {subtotal.ToString("C")}";
+                reciptLabel.Text += $"\n\n SubTotal...    {subtotal.ToString("C")}";
 
                 reciptLabel.Refresh();
                 Thread.Sleep(500);
 
-                reciptLabel.Text += $"\n Tax... {taxAmount.ToString("C")}";
+                reciptLabel.Text += $"\n Tax...         {taxAmount.ToString("C")}";
 
                 reciptLabel.Refresh();
                 Thread.Sleep(500);
 
-                reciptLabel.Text += $"\n Total... {totalAmount.ToString("C")}";
+                reciptLabel.Text += $"\n Total...       {totalAmount.ToString("C")}";
 
                 reciptLabel.Refresh();
                 Thread.Sleep(500);
 
-                reciptLabel.Text += $"\n\n Tendered... {tendered.ToString("C")}";
+                reciptLabel.Text += $"\n\n Tendered...    {tendered.ToString("C")}";
 
                 reciptLabel.Refresh();
                 Thread.Sleep(500);
 
-                reciptLabel.Text += $"\n Change... {change.ToString("C")}";
+                reciptLabel.Text += $"\n Change...      {change.ToString("C")}";
 
                 reciptLabel.Refresh();
                 Thread.Sleep(500);
 
-                reciptLabel.Text += $"\n\n      Thank You For Your Money";
+                reciptLabel.Text += $"\n\nThank You For Your Money";
 
                 newOrderButton.Enabled = true;
 

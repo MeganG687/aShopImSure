@@ -56,7 +56,7 @@
             // reciptLabel
             // 
             this.reciptLabel.BackColor = System.Drawing.Color.LightGray;
-            this.reciptLabel.Font = new System.Drawing.Font("Baskerville Old Face", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reciptLabel.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.reciptLabel.Location = new System.Drawing.Point(429, 9);
             this.reciptLabel.Name = "reciptLabel";
             this.reciptLabel.Size = new System.Drawing.Size(261, 411);
